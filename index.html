@@ -2,6 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -17,10 +19,13 @@
           <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                MENU
-                <i class="fas fa-bars"></i>
-              </button>
+              <div class="btn-group">
+                <button type="button" class="navbar-toggle collapsed " data-toggle="dropdown" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  MENU
+                  <i class="fas fa-bars"></i>
+                </button>
+
+              </div>
               <a class="navbar-brand" href="#">START BOOTSTRAP</a>
             </div>
 
@@ -107,31 +112,47 @@
             <div class="row">
               <div class="col-xs-10 col-xs-offset-1 up">
                 <h2 class="bold distance">ABOUT</h2>
-                <img class="star" src="./img/star-bg-green.png" alt="">
+                <img class="star distance" src="./img/star-bg-green.png" alt="">
               </div>
-              <div class="col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-1">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              <div class="text col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-2 distance">
+                Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
               </div>
-              <div class="col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-1">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              <div class="text col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-0 distance">
+                You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!
               </div>
-              <div class="col-xs-10 col-xs-offset-1 col-md-2 col-md-offset-5">
-                botton
+              <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-4 distance">
+                <button type="button" name="button">
+                   <i class="fas fa-download"></i> Free Download!
+                </button>
               </div>
             </div>
           </div>
         </section>
         <!-- sezione 4 -->
         <section id="section-4">
-          <div class="container">
+          <div class="container center">
             <div class="row">
               <div class="col-xs-10 col-xs-offset-1 up">
-                CONTACT ME
+                <h2 class="bold distance">CONTACT ME</h2>
+                <img class="star distance" src="./img/star-bg-white.png" alt="">
               </div>
                 <div class="col-xs-10 col-xs-offset-1 ">
-                  NAME <br>
-                  EMAIL ADRESS <br>
-                  NUMBER
+                  <div class="form-group distance">
+                    <input type="text" class="form-control" placeholder="Name" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="form-group distance">
+                    <input type="text" class="form-control" placeholder="Email adress" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="form-group distance">
+                    <input type="text" class="form-control" placeholder="Phone Number" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="form-group distance">
+                    <textarea type="text" class="form-control" placeholder="Text" aria-describedby="basic-addon1">
+                    </textarea>
+                  </div>
+                </div>
+                <div class="send col-xs-10 col-xs-offset-1 col-md-6 ">
+                  <button type="button" name="button">Send</button>
                 </div>
             </div>
           </div>
@@ -144,14 +165,22 @@
           <section id="footer-1">
             <div class="container">
               <div class="row">
-                <div class="col-xs-12 col-md-4">
-                  LOCATION
+                <div class="col-xs-12 col-md-4 distance">
+                  <h3>LOCATION</h3>
+                  <p>2215 John Daniel DriveClark, MO 65243</p>
                 </div>
-                <div class="col-xs-12 col-md-4">
-                  AROUND THE WEB
+                <div class="col-xs-12 col-md-4 distance">
+                  <h3>AROUND THE WEB</h3>
+                  <ul>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-linkedin-in"></i></li>
+                    <li><i class="fab fa-dribbble"></i></li>
+                  </ul>
                 </div>
-                <div class="col-xs-12 col-md-4">
-                  AROUND FREELANCER
+                <div class="col-xs-12 col-md-4 distance">
+                  <h3>ABOUT FREELANCER</h3>
+                  <p>Freelance is a free to use, MIT licensed Bootstrap theme created by Start Bootstrap .</p>
                 </div>
               </div>
             </div>
